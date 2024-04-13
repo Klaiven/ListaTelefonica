@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Telefonica</title>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Outfit", sans-serif;
+            color: #62cce4;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgb(167,76,242);
+            background: linear-gradient(90deg, rgba(167,76,242,1) 0%, rgba(57,99,215,1) 100%);
+        }
+
+        h1{
+            font-size: 2.5rem;
+            margin: 30px 0;
+            text-shadow: 0px 1px 3px #3963d7;
+        }
+
+        .inputs input{
+            width: 400px;
+            height: 40px;
+            border-radius: 10px;
+            border: 1px #3963d7 solid;
+            background-color: #dddddd;
+            font-size: 1rem;
+            color: #171717;
+            padding-left: 10px;
+        }
+        #cadastro{
+            width: 120px;
+            height: 40px;
+            font-weight: 600;
+            border-radius: 10px;
+            border: 1px #3963d7 solid;
+            background-color: #dddddd;
+            font-size: 1rem;
+            cursor: pointer;
+            color: #a74cf2;
+        }
+
+        .contato{
+            display: flex;
+            margin: 20px;
+            justify-content: space-between;
+        }
+
+        .contato h3{
+            padding-right: 20px;
+            font-size: 1.3rem;
+            text-transform: lowercase;
+        }
+
+        .contato h3:nth-child(1){
+            width: 450px;
+        }
+        .contato h3:nth-child(2){
+            width: 200px;
+        }
+
+        .contato input{
+            width: 30px;
+            border-radius: 8px;
+            border: 1px #3963d7 solid;
+            color: red;
+            cursor: pointer;
+            background-color: #dddddd;
+            font-weight: 900;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Contatos</h1>
+
+    <article class="inputs">
+        <form id="formCadastro">
+            <input type="text" id="nome" placeholder="Nome" required>
+            <input type="tel" id="numero" placeholder="Número de telefone" required>
+            <button type="submit" id="cadastro">Cadastrar</button>
+        </form>
+    </article>
+
+    <article class="outputs">
+        <section id="contatosUnicos">
+            
+        </section>
+    </article>
+
+    <script src="script.js"></script>
+</body>
+</html>
