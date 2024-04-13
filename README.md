@@ -5,7 +5,7 @@ Atividade de Banco de Dados Não Relacional com mongoDB atlas
 
 Garanta que a senha do banco de dados seja atualizada em src/index.js
 
-![index.js](https://ibb.co/5sb1tfG)  
+![index.js](https://i.ibb.co/0YHn8dm/image.png)  
 
 
 ```bash
